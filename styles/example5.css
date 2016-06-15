@@ -1,0 +1,5 @@
+h1 {font-family: cursive; text-align: center;}
+h2 {font-family: sans-serif; text-align:  center; }
+#picture {visibility: hidden; position: absolute; height: 75%; width: 100%; overflow: scroll; background-color: #CCFFFF; }
+#contacts {visibility: hidden; position: absolute; height: 75%; width: 100%; overflow: scroll; background-color: #DDFFFF; }
+img {float: left; height: auto; width: auto; box-shadow: 10px 10px 5px 5px;}

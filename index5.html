@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Module 6 Example</title>
+    <link rel="stylesheet" type="text/css" href="styles/example5.css" />
+    <script src="js/example5.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script>
+        var objContact;
+        var picturesource;
+        var destinationtype;
+
+        document.addEventListener("deviceready",onDeviceReady,false);
+
+        function onDeviceReady()
+        {
+            picturesource = navigator.camera.PictureSourceType;
+            destinationtype = navigator.camera.DestinationType;
+            objContact = navigator.contacts.create();
+        }
+    </script>
+</head>
+
+<body>
+    <section id="title">
+        <h1>Module 6 Example</h1>
+        <hr>
+        <select onchange="MenuChoice(value)" id="menu">
+            <option value="None">Please select an option.</option>
+            <option value="camera">Take a Picture</option>
+            <option value="contacts">Access Contacts</option>
+        </select>
+    </section>
+    <hr>
+    <section id="picture">
+        <h2>Take a Picture</h2>
+        <hr>
+        <button onclick="CapturePhoto()">Take Picture</button>
+        <br>
+        <img id="snapshot" src="" />
+        <br>
+        <br>
+    </section>
+    <section id="contacts">
+        <h2>Access Contacts</h2>
+        <br>
+        <button onclick="PickContact()">Pick A Contact</button>
+        <br>
+        <br>
+        <label>Contact Name: </label>
+        <label id="contactname"></label>
+    </section>
+
+
+
+</body>
+</html>

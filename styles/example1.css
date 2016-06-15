@@ -1,0 +1,3 @@
+h1 {font-family: cursive; text-align: center;}
+h2 {font-family: sans-serif; text-align:  center; }
+#section1 {visibility: hidden; position: absolute; height: 75%; width: 100%; overflow: scroll; background-color: #CCFFFF; }

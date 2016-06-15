@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Module 5 Example</title>
+    <link rel="stylesheet" type="text/css" href="styles/example4.css" />
+    <script src="js/example4.js"></script>
+</head>
+
+<body>
+    <section id="title">
+        <h1>Module 5 Example</h1>
+        <hr>
+        <select onchange="MenuChoice(value)" id="menu">
+            <option value="None">Please select an option.</option>
+            <option value="Section 1">Section 1</option>
+            <option value="Section 2">Section 2</option>
+            <option value="Geolocation">Geolocation</option>
+        </select>
+    </section>
+    <hr>
+    <section id="section1">
+        <h2>This is Section 1!</h2>
+    </section>
+    <section id="section2">
+        <h2>This is Section 2!</h2>
+    </section>
+    <section id="location">
+        <h3>Geolocation Test</h3>
+        <hr>
+        <button onclick="Location()">Find Current Location</button>
+        <br>
+        <label>Latitude: </label>
+        <label id="latitude">Latitude Result</label>
+        <br>
+        <label>Longitude: </label>
+        <label id="longitude">Longitude Result</label>
+    </section>
+
+
+
+</body>
+</html>
