@@ -18,7 +18,7 @@
         Julio C. Rivera 
     </author>
     
-    <preference name="phonegap-version" value="cli-6.1.0" />
+    <preference name="phonegap-version" value="cli-6.3.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
     <access origin="*" />
 
